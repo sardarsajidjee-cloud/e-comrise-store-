@@ -2,31 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Guessing Game</title>
-  <link rel="stylesheet" href="File.css">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="game">
-    <h2>Number Guessing Game 🎯</h2>
+  <nav>
+    <h2>My Store</h2>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
 
-    <select id="level" onchange="setLevel()">
-      <option value="">Select Level</option>
-      <option value="easy">Easy</option>
-      <option value="hard">Hard</option>
-    </select>
-
-    <p id="info">Choose difficulty to start</p>
-
-    <input type="number" id="guessInput" placeholder="Enter number" disabled>
-    <button onclick="checkGuess()" disabled id="guessBtn">Guess</button>
-
-    <p id="message"></p>
-    <p id="attempts"></p>
-
-    <button onclick="resetGame()">Restart 🔄</button>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search products...">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('electronics')">Electronics</button>
+    <button onclick="filterCategory('fashion')">Fashion</button>
   </div>
 
-  <script src="script.js"></script>
+  <div id="products" class="products"></div>
+
+  <script src="data.js"></script>
 </body>
-      </html>
+</html>
