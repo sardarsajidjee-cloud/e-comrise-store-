@@ -49,4 +49,4 @@ The website is fully responsive and works smoothly on:
 
 ---
 
-👨‍💻 Developed by: Your Name
+👨‍💻 Developed by: Your muhammad sajid
